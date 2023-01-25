@@ -2,15 +2,16 @@ import { Item, GildedRose } from '../app/gilded-rose';
 
 // Add a master test here
 
-//6 items in total 
+//7 items in total 
 const myAgedBrie = new Item("Aged Brie",20,23);
 const myBackstagePasses = new Item('Backstage passes to a TAFKAL80ETC concert',1,12) 
 const mySulfuras = new Item("Sulfuras, Hand of Ragnaros", 100, 80)
 const myChocolate = new Item("Chocolate",12,4)
 const myRollerskates = new Item("Rollerskates",7,50);
 const myDishwasher = new Item("Dishwasher",400,48);
+const myManaCake = new Item("Conjured Mana Cake",1,45);
 
-const ourItems = [myAgedBrie,myBackstagePasses,mySulfuras,myChocolate,myRollerskates,myDishwasher]; 
+const ourItems = [myAgedBrie,myBackstagePasses,mySulfuras,myChocolate,myRollerskates,myDishwasher,myManaCake]; 
 
 const ourGildedRose = new GildedRose(ourItems);
 

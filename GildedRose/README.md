@@ -21,13 +21,13 @@ let's create 6 items, the 3 mentioned plus 3 more items with very different Qual
 
 ### Possible Refactoring We can Do 
 
-
+Replace for (i= ...) loop with a for ... of loop COMPLETE
 
 Changing '==' to '===' 
 
-Using ++ and -- where applicable instead of 'x = x-1' syntax 
+Using ++ and -- where applicable instead of 'x = x-1' syntax COMPLETE 
 
-Assign all the this.item[i].varName to variables so the code looks neater
+Assign all the this.item[i].varName to variables so the code looks neater COMPLETE
 
 Combine the three named items into an 'exclusions' function (BUT check they are indeed always exclusions somewhere else)
 
