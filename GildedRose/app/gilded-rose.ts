@@ -12,7 +12,7 @@ export class Item {
     AgedBrieCheck() {
         this.sellIn--;
         if (this.quality < 50) this.quality++;
-        if (this.sellIn < 0) this.quality++;
+        if (this.sellIn < 0 && this.quality < 50) this.quality++;
     }
 
     //Note that Sulfurus appears to never change, so we can encode this directly in the switch statement, 
@@ -40,7 +40,6 @@ export class Item {
             else { this.quality =  Math.max(0, this.quality -2)}
         }
     
-
     // if quality is 0, do nothing
     // if quality is 1 or 2, set it to 0; 
     // if quality is 3, subtract 2 if sellIn >= 0, else subtract 3
@@ -57,8 +56,6 @@ export class Item {
             else { this.quality =  Math.max(0, this.quality -1 )}
         }
     }
-
-
 
 // this.sellIn --
 // if quality is 0, do nothing 
